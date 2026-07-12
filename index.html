@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="page">
+    <div class="outbox">
+        <div class="box">
+            <!-- 1. Changed "Name" to "Email" to match placeholder and API -->
+            <h1>Email</h1>
+            <input class="inpbox" type="email" placeholder="Enter Email" id="email" required>
+            
+            <h1>Password</h1>
+            <input class="inpbox" type="password" placeholder="Enter Password" id="password" required>
+            
+            <h1>Role</h1>
+            <!-- 2. Added id to select, fixed stray h1 tag, and added backend values -->
+            <select style="width: 100px; background-image:linear-gradient(to bottom,oklch(71.4% 0.203 305.504),oklch(81% 0.117 11.638)) ;" name="Role" id="role" required>
+                <option style="width: 100px;background-color:oklch(70.2% 0.183 293.541) ;" value="ADMIN">ADMIN</option>
+                <option style="width: 100px;background-color:oklch(70.2% 0.183 293.541) ;" value="EMPLOYEE">EMPLOYEE</option>
+                <option style="width: 100px;background-color:oklch(70.2% 0.183 293.541) ;" value="USER">USER</option>
+            </select>
+
+            <h1>UserName</h1>
+            <!-- 3. Added id to username -->
+            <input class="inpbox" type="text" placeholder="Enter UserName" id="username" required>
+
+            <div class="last">
+                <a href="http://127.0.0.1:5500/Login/index.html" target="_blank">Login</a>
+                <button style="padding: 6px 12px; border-radius: 4px; background-color: oklch(54.6% 0.245 262.881) ;font-size:medium" id="Submit">Submit</button>
+            </div>
+            <!-- 4. Added an empty tag to show if registration succeeded or failed -->
+            <p id="message"></p>
+        </div>
+    </div>
+   
+</body>
+<script src="main.js"></script>
+</html>
